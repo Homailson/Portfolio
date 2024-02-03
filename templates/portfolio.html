@@ -1,0 +1,11 @@
+<div class="projects">
+    {% for projeto in projetos %}
+    <figure class="projects__fig">
+        <img class="projects__img" src="./static/img/{{ projeto['imagem'] }}" alt="Foto {{ projeto['nome'] }}">
+        <div class="projects__text">
+            <p class="projects__name">{{ projeto["nome"] }}</p>
+            <a class="projects__link" href="/{{ projeto['id'] }}">Sobre o projeto</a>
+        </div>
+    </figure>
+    {% endfor %}
+</div>

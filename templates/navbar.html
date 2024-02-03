@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <label class="navbar__icon" for="navbar__toggler">
+        {% for _ in range(3) %}
+        <div class="navbar__icon-bar"></div>
+        {% endfor %}
+    </label>
+    <img class="navbar__img" src="/static/img/navbar.png" alt="Homailson photo">
+    <div class="navbar__profile">
+        <h3 class="navbar__name">Homailson</h3>
+        <p class="navbar__status">Aberto a trabalho</p>
+    </div>
+    <input type="checkbox" id="navbar__toggler" />
+    <ul class="navbar__menu" id="navbar__menu">
+        {% for section in sections %}
+        <li class="navbar__item">
+            <a class="navbar__link {% if loop.index == 1 %}navbar__link--highlighted{% endif %}"
+                href='#{{section["name"]}}'>{{section["name"].capitalize()}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

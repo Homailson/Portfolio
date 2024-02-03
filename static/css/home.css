@@ -1,0 +1,55 @@
+/* Start: home section sctructure */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* End: home section sctructure */
+
+/* Start: shortbio design */
+.shortbio__text {
+    color: #2596be;
+    margin: 0;
+}
+
+.shortbio__fix {
+    color: #D93654;
+}
+
+.shortbio__words {
+    display: inline-block;
+}
+
+.shortbio__cursor {
+    display: inline-block;
+    width: .12rem;
+    height: 1rem;
+    background-color: #D93654;
+    margin-left: .2rem;
+    animation: blink 0.8s infinite;
+}
+
+/* cursor flash effect */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* End: shortbio design */
+
+/* Start: Home image style */
+.homeimg {
+    align-self: end;
+    max-width: 100%;
+    height: auto;
+}
+
+/* End: Home image style */

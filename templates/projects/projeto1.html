@@ -1,0 +1,67 @@
+{% extends 'projects/base.html' %}
+
+{% block content %}
+
+<section class="header">    
+    <h2 class="header__title">{{projeto['nome']}}</h2>
+</section>
+
+<section class="description">
+    <h3 class="description__title">Descrição:</h3>
+    <p class="description__text">
+        Este é um projeto voluntário aplicado em uma barbearia real, com dados verídicos.
+    </p>
+    <ul class="description__list">
+        <li class="description__item">
+            <strong class="description__strong">Necessidade do cliente:</strong> visualizar métricas
+            anuais de forma unificada e personalizada. Sua aplicação apresentava
+            métricas trimestrais separadamente.
+        </li>
+        <li class="description__item">
+            <strong class="description__strong">Processo de resolução do problema:</strong> download
+            dos dados (xlsx), conversão para csv, tratamento dos dados com
+            PySpark (visando treino) e Análise dos dados com PowerBi.
+        </li>
+        <li class="description__item">
+            <strong class="description__strong">Experiência relevante adquirida:</strong> comunicação
+            direta com o cliente e construção da análise a partir das suas necessidades,
+            implicando diretamente na construção do código PySpark. Emprego de DAX para
+            definir métricas de fluxo de clientes, como clientes novos, antigos, perdidos, etc.
+        </li>
+        <li class="description__item">
+            <strong class="description__strong">Principal dificuldade:</strong> a automatização do processo é
+            possível utilizando Selenium, mas não por API, pois a aplicação não possui.
+        </li>
+        <li class="description__item">
+            <strong class="description__strong">Conclusão:</strong> O cliente pode agora visualizar as principais
+            métricas de forma conjunta, filtrando as informações em um único dashboard,
+            por ano, trimestre, mês, serviço e profissional.
+        </li>
+    </ul>
+</section>
+
+<section class="archtecture">
+    <h3 class="archtecture__title">Arquitetura:</h3>
+    <img class="archtecture__title__img" src="/static/img/projects/project1arch.jpeg" alt="Arquitetura do Projeto">
+</section>
+
+
+<section class="documentation">
+    <h3 class="documentation__title">Documentação:</h3>
+    <div class="documentation__wrapper">
+        <iframe class="documentation__iframe" src="/static/pdf/project1.pdf"></iframe>
+    </div>
+</section>
+
+<section class="product">
+    <h3 class="product__title">Produto:</h3>
+    <p class="product__text">Os dados do produto abaixo foram alterados para segurança do cliente.</p>
+    <div class="product__wrapper">
+        <iframe class="product__iframe" title="analise_dom_manolo_vpublica"
+            src="https://app.powerbi.com/view?r=eyJrIjoiMDFhMjQ4MDktZjMxMi00MDE4LWIzZTYtMmI4OGFiODE2ZTYwIiwidCI6IjQ0ZGZkNWNmLTE4ZmUtNDlkNy05MTU1LTg3ZTFiNWM3ZGMwMiJ9"
+            frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+</section>
+
+
+{% endblock%}

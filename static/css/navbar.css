@@ -1,0 +1,113 @@
+/* Start: navbar design */
+.navbar {
+    background-color: #cecece;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#navbar__toggler {
+    display: none;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+#navbar__toggler:checked+.navbar__menu {
+    max-height: max-content;
+    display: block;
+}
+
+.navbar__item {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar__link:hover {
+    border-bottom: 0.1rem solid #D93654;
+}
+
+/* Class added by highlight.js */
+.navbar__link--highlighted {
+    color: #D93654;
+}
+
+.navbar__icon {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.navbar__icon-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: black;
+    margin: 0.4rem;
+}
+
+.navbar__img {
+    display: none;
+}
+
+.navbar__profile {
+    display: none;
+}
+
+/*  End: navbar design  */
+
+/* Start: big screens design */
+@media (min-width: 500px) {
+
+    /* Start: navbar design */
+    .navbar {
+        width: 20%;
+        height: 100%;
+    }
+
+    .navbar__icon {
+        display: none;
+    }
+
+    .navbar__img {
+        display: block;
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+        background-color: #EAEAEA;
+        margin-bottom: 1rem;
+    }
+
+    .navbar__profile {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .navbar__name {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar__status {
+        font-size: 0.9rem;
+        color: #D93654;
+    }
+
+    .navbar__menu {
+        display: block;
+    }
+
+    /* End: navbar desing */
+}
+
+/* End: big screens design */

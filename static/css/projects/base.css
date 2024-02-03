@@ -1,0 +1,17 @@
+/* Start: html basic design */
+html,
+body {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 18px;
+    margin: 0;
+    background-color: #fdfcfc;
+}
+
+/* End: html basic design */
+
+/* Start: project basic design */
+.project {  
+    margin: 1rem;
+    background-color: white;  
+}
+/* End: project basic design */

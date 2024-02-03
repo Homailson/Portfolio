@@ -1,0 +1,77 @@
+/* Start: home section sctructure */
+.sobre {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    margin-right: 1rem;    
+}
+
+/* End: home section sctructure */
+
+/* Start: self resume  design */
+.selfresume__text {
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1.2rem;    
+}
+
+/* End: self resume  design */
+
+
+/* Start: Skills design */
+
+.skills {
+    display: flex;
+    flex-direction: column;                 
+}
+
+.skills__title {    
+    font-size: 1.2rem;
+    padding-bottom: 1rem;   
+}
+
+.skills__img {
+    align-self: center;
+    width: 90%;
+    height: auto;    
+}
+
+/* End: Skills design */
+
+
+
+/* Start: big screens design */
+@media (min-width: 500px) {
+
+    .sobre {
+        justify-content: start;
+    }
+
+    /* Start: self resume  design */
+    .selfresume {
+        padding-bottom: 2rem;
+    }
+    
+    .selfresume__text {   
+        font-size: 1rem;   
+        line-height: 2rem;
+    }
+
+    /* End: self resume  design */
+
+    /* Start: Skills design */
+    .skills__title {
+        padding-bottom: 2rem;
+        font-size: 1.5rem;        
+    }
+
+    .skills__img {
+        width: 50%;
+        height: 50%;        
+    }
+
+    /* End: Skills design */
+
+}
+
+/* End: big screens design */

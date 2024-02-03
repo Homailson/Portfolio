@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Start: html basic design */
+html {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* End: html basic design */
+
+/* Start: grid composition */
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "main";
+}
+
+/* End: grid composition */
+
+/* Start: section design */
+section {
+    display: flex;
+    flex-direction: column;
+    /* this is a key property */
+    min-height: 100vh;
+    /* end of key property */
+    width: auto;
+    padding-top: 5rem;
+}
+
+.section--background-gray {
+    background-color: #f3f3f3;
+}
+
+.section__title {
+    font-size: 1.5rem;
+    margin-left: 1.25rem;
+}
+
+.section__content {
+    flex: 1;
+    margin-top: 1rem;
+    margin-left: 1.25rem;
+}
+
+/* End: section design */
+
+/* Start: big screens design */
+@media (min-width: 500px) {
+
+    /* Start: grid composition */
+    .page-wrapper {
+        grid-template-columns: 20% 80%;
+        grid-template-areas:
+            "navbar main";
+    }
+
+    /* End: grid composition */
+
+    /* Start: section design */
+    section {
+        padding-top: 3rem;
+    }
+
+    .section__title {
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    .section__content {
+        margin-left: 3rem;
+    }
+
+    /* End: section design */
+
+}
+
+/* End: big screens design */

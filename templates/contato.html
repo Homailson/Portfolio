@@ -1,0 +1,10 @@
+<form class="contato__form" action="/" method="post">
+    <input class="cotanto__field" type="text" id="nome" name="nome" placeholder="Nome" required>
+    <input class="cotanto__field" type="email" id="email" name="email" placeholder="Email" autocomplete="on" required>
+    <input class="cotanto__field" type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+    <textarea class="cotanto__textarea" id="mensagem" name="mensagem" placeholder="Mensagem" rows="4"
+        required></textarea>
+    <input class="cotanto__submit" type="submit" value="Enviar">
+</form>
+
+{% include "footer.html" %}

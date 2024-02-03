@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Homailson </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/sobre.css">
+    <link rel="stylesheet" href="/static/css/portfolio.css">
+    <link rel="stylesheet" href="/static/css/contato.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        {% include "navbar.html" %}
+        <main class="main">
+            {% for section in sections %}
+            <section class='section {% if loop.index is even %}section--background-gray{%endif%}'
+                id='{{section["name"]}}'>
+                <h2 class="section__title">{{section["title"]}}</h2>
+                <div class='section__content {{section["name"]}}'>
+                    {% include section["content"] %}
+                </div>
+            </section>
+            {% endfor %}
+        </main>
+    </div>
+    <script src="/static/js/navbar_menu_controller.js"></script>
+    <script src="/static/js/highlight.js"></script>
+    <script src="/static/js/shortbio.js"></script>
+</body>
+
+</html>

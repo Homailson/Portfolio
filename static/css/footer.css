@@ -1,0 +1,36 @@
+/* Start: footer design */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cecece;
+    padding: 5%;
+    width: 100%;
+}
+
+.footer__link {
+    width: 10%;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer__img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer__img:hover {
+    transform: scale(1.2);
+}
+
+/* End: footer design */
+
+/* Start: big screens design */
+@media (min-width: 500px) {
+    .footer__link {
+        width: 5%;
+        text-decoration: none;
+        margin: 0 1rem;
+    }
+}
