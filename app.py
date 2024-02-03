@@ -29,7 +29,8 @@ projetos = [
      "imagem": "project4.jpg"},
     {"id": "projeto5", "nome": "Vaga de Projeto",
      "imagem": "project5.jpg"},
-    {"id": "projeto6", "nome": "Vaga de Projeto", "imagem": "project6.jpg"}
+    {"id": "projeto6", "nome": "Vaga de Projeto",
+     "imagem": "project6.jpg"}
 ]
 
 
