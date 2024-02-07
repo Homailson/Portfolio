@@ -1,18 +1,67 @@
 /* Start: home section sctructure */
 .sobre {
     display: flex;
-    flex-direction: column;    
-    justify-content: space-around;
-    margin-right: 1rem;    
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
 }
 
 /* End: home section sctructure */
+
+/* Start: shortbio design */
+.shortbio__text {
+    color: #2596be;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.shortbio__fix {
+    color: #D93654;
+}
+
+.shortbio__words {
+    display: inline-block;
+}
+
+.shortbio__cursor {
+    display: inline-block;
+    width: .12rem;
+    height: 1rem;
+    background-color: #D93654;
+    margin-left: .2rem;
+    animation: blink 0.8s infinite;
+}
+
+/* cursor flash effect */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* End: shortbio design */
+
+/* Start: Home image style */
+.homeimg {
+    align-self: end;
+    max-width: 100%;
+    height: auto;
+}
+
+/* End: Home image style */
 
 /* Start: self resume  design */
 .selfresume__text {
     font-size: 0.8rem;
     text-align: justify;
     line-height: 1.2rem;    
+    padding-bottom: 1rem;
 }
 
 /* End: self resume  design */
@@ -22,17 +71,19 @@
 
 .skills {
     display: flex;
-    flex-direction: column;                 
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 1rem; 
 }
 
 .skills__title {    
     font-size: 1.2rem;
-    padding-bottom: 1rem;   
+    padding-bottom: 1rem;
 }
 
 .skills__img {
     align-self: center;
-    width: 90%;
+    width: 100%;
     height: auto;    
 }
 
@@ -67,7 +118,7 @@
 
     .skills__img {
         width: 50%;
-        height: 50%;        
+        height: auto;        
     }
 
     /* End: Skills design */

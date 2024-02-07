@@ -12,8 +12,7 @@ mail = Mail(app)
 
 
 sections = [
-    {"name": "home", "title": "Homailson Lopes", "content": "home.html"},
-    {"name": "sobre", "title": "Sobre", "content": "sobre.html"},
+    {"name": "sobre", "title": "Homailson Lopes", "content": "sobre.html"},
     {"name": "portfolio", "title": "Portfolio", "content": "portfolio.html"},
     {"name": "contato", "title": "Contato", "content": "contato.html"}
 ]
@@ -21,16 +20,16 @@ sections = [
 projetos = [
     {"id": "projeto1", "nome": "Barbearia Dom Manolo",
         "imagem": "project1.jpg"},
-    {"id": "projeto2", "nome": "Vaga de Projeto",
-     "imagem": "project2.jpg"},
-    {"id": "projeto3", "nome": "Vaga de Projeto",
-     "imagem": "project3.jpg"},
-    {"id": "projeto4", "nome": "Vaga de Projeto",
-     "imagem": "project4.jpg"},
-    {"id": "projeto5", "nome": "Vaga de Projeto",
-     "imagem": "project5.jpg"},
-    {"id": "projeto6", "nome": "Vaga de Projeto",
-     "imagem": "project6.jpg"}
+    # {"id": "projeto2", "nome": "Vaga de Projeto",
+    #  "imagem": "project2.jpg"},
+    # {"id": "projeto3", "nome": "Vaga de Projeto",
+    #  "imagem": "project3.jpg"},
+    # {"id": "projeto4", "nome": "Vaga de Projeto",
+    #  "imagem": "project4.jpg"},
+    # {"id": "projeto5", "nome": "Vaga de Projeto",
+    #  "imagem": "project5.jpg"},
+    # {"id": "projeto6", "nome": "Vaga de Projeto",
+    #  "imagem": "project6.jpg"}
 ]
 
 

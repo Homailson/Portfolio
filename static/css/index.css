@@ -61,6 +61,11 @@ section {
 
 /* Start: big screens design */
 @media (min-width: 500px) {
+    /* Start: html structure */
+    html {
+        font-size: 1.25rem;
+    }
+    /* End: html structure */
 
     /* Start: grid composition */
     .page-wrapper {
